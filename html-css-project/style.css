@@ -88,6 +88,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .sidebar {
@@ -134,7 +135,7 @@ body {
 
 .sidebar-highlighted {
     position: absolute;
-    background-color: hotpink;
+    background-color: rgb(114, 114, 202);
     left: 0;
     width: 2px;
     height: 40px;
@@ -374,15 +375,118 @@ body {
     border-top: solid 1px rgba(211, 211, 211, 0.12);
 }
 
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .group-title {
     height: 60px;
     background-color: rgb(49, 49, 49);
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding-left: 1rem;
-    color: violet;
+    color: rgba(245, 245, 245, 0.712);
     border-bottom: black 1px solid;
+}
+
+.title-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-left: 5px;
+}
+
+.recurring {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.highlighted-group {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: -3px;
+    font-weight: 700;
+}
+
+.group-highlight {
+    position: relative;
+    width: 24px;
+    height: 3px;
+    background-color: rgb(114, 114, 202);
+    border: none;
+    left: 11px;
+    bottom: -18px;
+    border-radius: 2px;
+}
+
+.group-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: 600px;
+}
+
+.group-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.buttons-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-button {
+    background-color: rgb(114, 114, 202);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 27px;
+}
+
+.add-people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.title-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.vertical-separator {
+    height: 20px;
+    width: 1px;
+    background-color: rgba(179, 179, 179, 0.22);
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .pinned-section {
@@ -390,21 +494,40 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding-left: 1rem;
-    color: rgb(194, 55, 55);
+    color: rgba(245, 245, 245, 0.712);
     border-bottom: rgba(179, 179, 179, 0.22) 1px solid;
 }
 
-.chat-group-messages{
-    background-color: rgb(37, 37, 70);
-    height: 100%;
-    padding: 20px;
+.pinned-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
 }
 
+.pinned-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
 
+.name {
+    margin-right: 20px;
+}
+
+.chat-group-messages{
+    height: 100%;
+}
+
+.chat-container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
 
 .footer {
     background-color: rgb(36, 43, 77);
